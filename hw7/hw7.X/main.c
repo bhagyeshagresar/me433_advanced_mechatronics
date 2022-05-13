@@ -77,17 +77,24 @@ int main() {
     
     __builtin_enable_interrupts();
     
-    // init the imu
-    init_mpu6050();
-    
+    //i2c_master_setup();
     char m_in[100]; // char array for uart data coming in
     char m_out[200]; // char array for uart data going out
     int i;
+    sprintf(m_out,"hello1\r\n");
+    WriteUART1(m_out);
+    
+    // init the imu
+    init_mpu6050();
+    sprintf(m_out,"hello2\r\n");
+    WriteUART1(m_out);
+    
+    
     #define NUM_DATA_PNTS 300 // how many data points to collect at 100Hz
     float ax[NUM_DATA_PNTS], ay[NUM_DATA_PNTS], az[NUM_DATA_PNTS], gx[NUM_DATA_PNTS], gy[NUM_DATA_PNTS], gz[NUM_DATA_PNTS], temp[NUM_DATA_PNTS];
     
-    //sprintf(m_out,"MPU-6050 WHO_AM_I: %X\r\n",whoami());
-    //WriteUART1(m_out);
+    sprintf(m_out,"MPU-6050 WHO_AM_I: %X\r\n",whoami());
+    WriteUART1(m_out);
     char who = whoami(); // ask if the imu is there
     if (who != 0x68){
         // if the imu is not there, get stuck here forever
