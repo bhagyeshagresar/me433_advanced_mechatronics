@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -243,26 +243,12 @@ package type P</description>
 &lt;p&gt;Example device(s):
 &lt;ul&gt;&lt;li&gt;CONN_02&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.2032" layer="21"/>
 <pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
-<text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<wire x1="-1.27" y1="2.54" x2="-1.27" y2="-1.27" width="0.4064" layer="21"/>
+<wire x1="-1.27" y1="-1.27" x2="3.81" y2="-1.27" width="0.4064" layer="21"/>
+<wire x1="3.81" y1="-1.27" x2="3.81" y2="2.54" width="0.4064" layer="21"/>
+<wire x1="3.81" y1="2.54" x2="-1.27" y2="2.54" width="0.4064" layer="21"/>
 </package>
 <package name="1X03">
 <description>&lt;h3&gt;Plated Through Hole - 3 Pin&lt;/h3&gt;
@@ -4801,6 +4787,130 @@ Source: AVX .. aphvc.pdf</description>
 <text x="-0.4" y="0.3" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.4" y="-1.6" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="TWO">
+<pad name="1" x="-1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-1.27" width="0.4064" layer="21"/>
+<wire x1="-2.54" y1="-1.27" x2="2.54" y2="-1.27" width="0.4064" layer="21"/>
+<wire x1="2.54" y1="-1.27" x2="2.54" y2="2.54" width="0.4064" layer="21"/>
+<wire x1="2.54" y1="2.54" x2="-2.54" y2="2.54" width="0.4064" layer="21"/>
+</package>
+<package name="DIL28-6" urn="urn:adsk.eagle:footprint:20597/1">
+<description>&lt;B&gt;Dual In Line&lt;/B&gt;&lt;p&gt;
+package type P</description>
+<wire x1="-18.542" y1="1.27" x2="-18.542" y2="-1.27" width="0.1524" layer="21" curve="-180"/>
+<wire x1="18.669" y1="-6.223" x2="18.669" y2="6.223" width="0.1524" layer="21"/>
+<wire x1="-18.542" y1="6.223" x2="-18.542" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-18.542" y1="6.223" x2="18.669" y2="6.223" width="0.1524" layer="21"/>
+<wire x1="18.669" y1="-6.223" x2="-18.542" y2="-6.223" width="0.1524" layer="21"/>
+<wire x1="-18.542" y1="-1.27" x2="-18.542" y2="-6.223" width="0.1524" layer="21"/>
+<pad name="1" x="-16.51" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-13.97" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-11.43" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="-8.89" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="-6.35" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="-3.81" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="-1.27" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="1.27" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="3.81" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="6.35" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="8.89" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="11.43" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="13.97" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="16.51" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="15" x="16.51" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="16" x="13.97" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="17" x="11.43" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="18" x="8.89" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="19" x="6.35" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="20" x="3.81" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="21" x="1.27" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="22" x="-1.27" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="23" x="-3.81" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="24" x="-6.35" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="25" x="-8.89" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="26" x="-11.43" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="27" x="-13.97" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="28" x="-16.51" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<text x="-18.923" y="-6.096" size="1.778" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-13.97" y="-2.2098" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="DIL64" urn="urn:adsk.eagle:footprint:20619/1">
+<description>&lt;B&gt;Dual In Line&lt;/B&gt;&lt;p&gt;
+package type P</description>
+<wire x1="-28.956" y1="-1.397" x2="-28.956" y2="-8.382" width="0.1524" layer="21"/>
+<wire x1="-28.956" y1="1.143" x2="-28.956" y2="-1.397" width="0.1524" layer="21" curve="-180"/>
+<wire x1="28.956" y1="-8.382" x2="28.956" y2="8.382" width="0.1524" layer="21"/>
+<wire x1="-28.956" y1="8.382" x2="-28.956" y2="1.143" width="0.1524" layer="21"/>
+<wire x1="-28.956" y1="8.382" x2="28.956" y2="8.382" width="0.1524" layer="21"/>
+<wire x1="-28.956" y1="-8.382" x2="28.956" y2="-8.382" width="0.1524" layer="21"/>
+<pad name="4" x="-22.225" y="-9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="5" x="-20.447" y="-9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="6" x="-18.669" y="-9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="7" x="-16.891" y="-9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="8" x="-15.113" y="-9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="9" x="-13.335" y="-9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="10" x="-11.557" y="-9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="11" x="-9.779" y="-9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="12" x="-8.001" y="-9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="13" x="-6.223" y="-9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="14" x="-4.445" y="-9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="15" x="-2.667" y="-9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="16" x="-0.889" y="-9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="17" x="0.889" y="-9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="18" x="2.667" y="-9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="19" x="4.445" y="-9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="20" x="6.223" y="-9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="21" x="8.001" y="-9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="22" x="9.779" y="-9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="23" x="11.557" y="-9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="24" x="13.335" y="-9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="25" x="15.113" y="-9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="26" x="16.891" y="-9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="27" x="18.669" y="-9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="28" x="20.447" y="-9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="29" x="22.225" y="-9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="30" x="24.003" y="-9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="1" x="-27.559" y="-9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="2" x="-25.781" y="-9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="3" x="-24.003" y="-9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="31" x="25.781" y="-9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="32" x="27.559" y="-9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="33" x="27.559" y="9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="34" x="25.781" y="9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="35" x="24.003" y="9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="36" x="22.225" y="9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="37" x="20.447" y="9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="38" x="18.669" y="9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="39" x="16.891" y="9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="40" x="15.113" y="9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="41" x="13.335" y="9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="42" x="11.557" y="9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="43" x="9.779" y="9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="44" x="8.001" y="9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="45" x="6.223" y="9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="46" x="4.445" y="9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="47" x="2.667" y="9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="48" x="0.889" y="9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="49" x="-0.889" y="9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="50" x="-2.667" y="9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="51" x="-4.445" y="9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="52" x="-6.223" y="9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="53" x="-8.001" y="9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="54" x="-9.779" y="9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="55" x="-11.557" y="9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="56" x="-13.335" y="9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="57" x="-15.113" y="9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="58" x="-16.891" y="9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="59" x="-18.669" y="9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="60" x="-20.447" y="9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="61" x="-22.225" y="9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="62" x="-24.003" y="9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="63" x="-25.781" y="9.525" drill="0.7112" shape="long" rot="R90"/>
+<pad name="64" x="-27.559" y="9.525" drill="0.7112" shape="long" rot="R90"/>
+<text x="-29.464" y="-8.128" size="1.778" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-21.59" y="-2.3622" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="1206" urn="urn:adsk.eagle:package:15796/2" type="model">
@@ -6434,6 +6544,16 @@ Source: AVX .. aphvc.pdf</description>
 <pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
+<symbol name="TWO">
+<pin name="1" x="-7.62" y="2.54" length="middle"/>
+<pin name="2" x="-7.62" y="-2.54" length="middle"/>
+<text x="2.54" y="2.54" size="1.27" layer="94">&gt;NAME</text>
+<text x="2.54" y="-2.54" size="1.27" layer="94">&gt;VALUE</text>
+<wire x1="-5.08" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="DISPLAY">
@@ -6627,18 +6747,6 @@ Source: AVX .. aphvc.pdf</description>
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="PIC32">
-<gates>
-<gate name="G$1" symbol="PIC32" x="-48.26" y="2.54"/>
 </gates>
 <devices>
 <device name="">
@@ -9720,6 +9828,34 @@ Source: www.kingbright.com</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
+</deviceset>
+<deviceset name="TWO">
+<gates>
+<gate name="G$1" symbol="TWO" x="-76.2" y="22.86"/>
+</gates>
+<devices>
+<device name="" package="TWO">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PIC32">
+<gates>
+<gate name="G$1" symbol="PIC32" x="-63.5" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="DIL64">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
 </deviceset>
 </devicesets>
 </library>
