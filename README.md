@@ -1,3 +1,2 @@
-"# me433_advanced_mechatronics" 
 
-# Bhagyesh Agresar - ME433 Advanced Mechatronics Repository
+# Bhagyesh Agresar - ME433 Advanced Mechatronics Repository Spring 2022
